@@ -1,0 +1,171 @@
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.nav-item {
+    margin: 15px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.image-google {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 40px;
+}
+
+.text-field {
+    display: flex;
+    z-index: 3;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 584px;
+}
+
+.text-field:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+.btn-search {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-search:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+/* advanced search */
+.adv-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adv-img {
+    width: 74px;
+    height: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* title */
+.adv-title {
+    color: #d93025;
+    font-size: 20px;
+    font-family: arial;
+    margin: 25px 35px;
+}
+
+/* grey linie */
+.grey-line {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 40px;
+}
+
+/* label heading */
+.adv-label {
+    font-size: 16px;
+    font-family: arial;
+    color: #333333;
+}
+
+.r-adv {
+    font-size: 11px;
+    font-family: arial;
+    color: #555555;
+}
+
+/* all labels and text boxes */
+.row-input {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* labels */
+.left {
+    width: 200px;
+}
+
+/* textboxes */
+.middle {
+    width: 572px;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+/* <p> textbox labels */
+.p-adv {
+    font-size: 13px;
+    font-family: arial;
+    color: #222222;
+}
+
+/* to do title */
+.p-todo {
+    font-size: 13px;
+    font-family: arial;
+    font-weight: 700;
+    color: #777777;
+}
+
+/* button on advanced page */
+.btn-adv {
+    box-shadow: none;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+}
+
+.btn-adv-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 640px;
+    margin-top: 20px;
+}
