@@ -87,9 +87,13 @@ function load_mailbox(mailbox) {
 
         // Populate the div with the sender, subject, and timestamp
         newEmail.innerHTML = `
-        <span> <strong>${email.sender}</strong> </span>
-        <span> ${email.subject}</span>
-        <span> ${email.timestamp}</span>
+        <div class="loadmail-view">
+         <div class="content">
+           <div class="sender"> ${email.sender}</div>
+           <div class="subject"> ${email.subject}</div>
+          </div>
+          <div class="timestamp"> ${email.timestamp}</div>
+        </div>
         `;
 
         // Add an event listener to view the email details when clicked

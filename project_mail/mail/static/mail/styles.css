@@ -6,10 +6,32 @@ textarea {
     background-color: gray;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .unread {
     background-color: white;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.loadmail-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loadmail-view .content {
+    display: flex;
+    align-items: center;
+}
+.loadmail-view .sender {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.loadmail-view .subject {
+    margin-right: 10px;
+}
+.loadmail-view .timestamp {
+    color: #999;
 }
