@@ -10,6 +10,14 @@ from .models import User
 def index(request):
     return render(request, "network/index.html")
 
+def newPost(request):
+    if request.method == "POST":
+        content = request.POST['content']
+        user = User.objects.get(pk=request.user.id)
+        post = Post(content=content, user=user)
+        post.save()
+        return HttpResponseRedirect(reverse(index))
+
 
 def login_view(request):
     if request.method == "POST":
