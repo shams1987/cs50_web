@@ -4,18 +4,26 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from .models import User
+from .models import User, Post
 
 
 def index(request):
     return render(request, "network/index.html")
 
+# task 1
+# Function to handle the creation of a new post
 def newPost(request):
+    # Check if the request method is POST (i.e., form submission)
     if request.method == "POST":
-        content = request.POST['content']
+        # Retrieve the content of the post from the POST request data
+        content = request.POST["content"]
+        # Get the currently logged-in user from the User model
         user = User.objects.get(pk=request.user.id)
+        # Create a new Post object with the retrieved content and user
         post = Post(content=content, user=user)
+        # Save the new post to the database
         post.save()
+        # Redirect the user back to the index page after the post is saved
         return HttpResponseRedirect(reverse(index))
 
 
